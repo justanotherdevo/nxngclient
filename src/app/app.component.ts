@@ -25,7 +25,7 @@ export class AppComponent implements OnInit{
 
   constructor (private httpClient: HttpClient){
     this.title="Oops";
-    this.theDataSource$=this.httpClient.get<Product[]>("https://nodeexpresscicd.azurewebsites.net/api/products");
+    this.theDataSource$=this.httpClient.get<Product[]>("dir");
   }
 
   ngOnInit(){
